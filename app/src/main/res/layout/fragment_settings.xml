@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentSettings">
+
+    <TextView
+        android:id="@+id/tv_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/filter"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_filter" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/category"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1" />
+
+    <TextView
+        android:id="@+id/tv_popular_movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="@string/popular_movies"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_category" />
+
+    <TextView
+        android:id="@+id/tv_movies_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/movie_with_rate_from"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_popular_movies" />
+
+    <TextView
+        android:id="@+id/tv_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="@string/_5"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_movies_rate" />
+
+    <TextView
+        android:id="@+id/tv_from_release_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/from_release_year"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_seekbar" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="@string/_2015"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_from_release_year" />
+
+    <TextView
+        android:id="@+id/tv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/sort"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_year" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sort" />
+
+    <TextView
+        android:id="@+id/tv_sort_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/sort_by"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/tv_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="@string/release_date"
+        android:textSize="@dimen/dimen_15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sort_by" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

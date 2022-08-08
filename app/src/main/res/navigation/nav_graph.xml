@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMovies">
+
+    <fragment
+        android:id="@+id/fragmentMovies"
+        android:name="com.phudt7.movie.fragments.FragmentMovies"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_movies">
+        <action
+            android:id="@+id/action_fragmentMovies_to_fragmentMoviesDetail"
+            app:destination="@id/fragmentMoviesDetail"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_fragmentMovies_to_fragmentFavourites"
+            app:destination="@id/fragmentFavourites"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAbout"
+        android:name="com.phudt7.movie.fragments.FragmentAbout"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/fragmentFavourites"
+        android:name="com.phudt7.movie.fragments.FragmentFavourites"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites" />
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:name="com.phudt7.movie.fragments.FragmentSettings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/fragmentMoviesDetail"
+        android:name="com.phudt7.movie.fragments.FragmentMoviesDetail"
+        android:label="fragment_movies_detail"
+        tools:layout="@layout/fragment_movies_detail">
+        <argument
+            android:name="data"
+            app:argType="com.phudt7.movie.model.Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReminder"
+        android:name="com.phudt7.movie.fragments.FragmentReminder"
+        android:label="fragment_reminder"
+        tools:layout="@layout/fragment_reminder">
+        <action
+            android:id="@+id/action_fragmentReminder_to_fragmentMoviesDetail"
+            app:destination="@id/fragmentMoviesDetail"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+</navigation>

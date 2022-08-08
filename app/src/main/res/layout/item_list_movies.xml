@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_5dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="@dimen/dimen_5dp"
+    android:background="#00FFFFFF">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dimen_50dp"
+        app:cardCornerRadius="@dimen/dimen_15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/MoviesTitle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_moviess"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_release_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:text="@string/ReleaseDate"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_release_date_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_5dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_toEndOf="@id/tv_release_date"
+                        android:text="@string/ReleaseDateDetail"
+                        android:textColor="#F80256"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_release_date"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:text="@string/Rating"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_rating_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_release_date"
+                        android:layout_marginStart="@dimen/dimen_5dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_toEndOf="@id/tv_rating"
+                        android:text="@string/RatingDetail"
+                        android:textColor="#F80256"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_overview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_rating"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:text="@string/Overview"
+                        android:textColor="#F80256" />
+
+                    <TextView
+                        android:id="@+id/tv_overview_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_overview"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:includeFontPadding="false"
+                        android:lines="4"
+                        android:maxLines="4"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/img_starMovies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_release_date_detail"
+                        android:layout_alignParentEnd="true"
+                        android:background="@mipmap/ic_star_border_black" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="@string/category_dialog"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_category">
+
+        <RadioButton
+            android:id="@+id/rb_popular_movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/popular_movies" />
+
+        <RadioButton
+            android:id="@+id/rb_top_rated_movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/top_rated_movies" />
+
+        <RadioButton
+            android:id="@+id/rb_upcoming_movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/upcoming_movies" />
+
+        <RadioButton
+            android:id="@+id/rb_nowplaying_movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/nowplaying_movies" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

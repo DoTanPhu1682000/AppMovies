@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Movie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Movies">Movies</string>
+    <string name="Favourites">Favourites</string>
+    <string name="Settings">Settings</string>
+    <string name="About">About</string>
+    <string name="Name">Do Tan Phu</string>
+    <string name="Mail">PhuDT7@fsoft.com.vn</string>
+    <string name="Birthday">16/08/2000</string>
+    <string name="Person">Male</string>
+    <string name="Edit">Edit</string>
+    <string name="Reminder">Reminder</string>
+    <string name="ShowAll">Show All</string>
+    <string name="MoviesTitle">Movies Title</string>
+    <string name="ReleaseDate">Release date:</string>
+    <string name="ReleaseDateDetail">14-08-2015</string>
+    <string name="Rating">Rating:</string>
+    <string name="RatingDetail">7.0/10.0</string>
+    <string name="Overview">Overview:</string>
+    <string name="CastAndCrew">Cast &amp; Crew</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">done</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="girdview">GirdView</string>
+    <string name="filter">FILTER</string>
+    <string name="category">Category</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="movie_with_rate_from">Movie with rate from</string>
+    <string name="_5">5</string>
+    <string name="from_release_year">From Release year</string>
+    <string name="_2015">2015</string>
+    <string name="sort">SORT</string>
+    <string name="sort_by">Sort By</string>
+    <string name="release_date">Release Date</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="nowplaying_movies">Nowplaying Movies</string>
+    <string name="arrow_drop">arrow drop</string>
+    <string name="category_dialog">Category</string>
+    <string name="OK">OK</string>
+    <string name="search">Search</string>
+    <string name="_1970">1970</string>
+    <string name="_2015_11_28">2015/11/28</string>
+    <string name="_05_04">05:04</string>
+    <string name="delete">Delete</string>
+    <string name="cancel_reminder">Cancel</string>
+    <string name="are_your_sure_to_delete">Are your sure to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+</resources>

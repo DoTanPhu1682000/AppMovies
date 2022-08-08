@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/arrowDrop"
+        android:icon="@mipmap/ic_arrow_drop_down"
+        android:title="@string/arrow_drop"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemlistGird"
+        android:icon="@mipmap/ic_grid_on_white"
+        android:title="@string/girdview"
+        app:showAsAction="always" />
+
+<!--    <item-->
+<!--        android:id="@+id/fragmentMovies"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@mipmap/ic_home"-->
+<!--        android:title="@string/Movies" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/fragmentFavourites"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@mipmap/ic_favorite"-->
+<!--        android:title="@string/Favourites" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/fragmentSettings"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@mipmap/ic_settings"-->
+<!--        android:title="@string/Settings" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/fragmentAbout"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@mipmap/ic_info"-->
+<!--        android:title="@string/About" />-->
+</menu>
